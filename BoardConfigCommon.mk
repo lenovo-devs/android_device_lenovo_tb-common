@@ -193,6 +193,9 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     $(COMMON_PATH)/sepolicy/public
