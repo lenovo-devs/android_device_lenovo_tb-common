@@ -294,6 +294,12 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.msm.usb.configfs.rc
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl
