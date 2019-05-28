@@ -188,8 +188,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     $(COMMON_PATH)/sepolicy/public
