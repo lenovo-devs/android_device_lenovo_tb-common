@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio.primary.msm8953 \
+    audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
@@ -70,11 +70,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
 # Camera
+#PRODUCT_PACKAGES += \
+#    camera.msm8937 \
+#    libmm-omxcore \
+#    libmm-qcamera \
+#    Snap
+
+# Camera
 PRODUCT_PACKAGES += \
-    camera.msm8953 \
-    libmm-omxcore \
-    libmm-qcamera \
     Snap
+
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -102,12 +107,12 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    gralloc.msm8953 \
-    hwcomposer.msm8953 \
+    gralloc.msm8937 \
+    hwcomposer.msm8937 \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \
-    memtrack.msm8953
+    memtrack.msm8937
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -210,7 +215,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8953
+    lights.msm8937
 
 # OMX
 PRODUCT_PACKAGES += \

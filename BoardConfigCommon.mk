@@ -17,11 +17,11 @@
 VENDOR_PATH := device/lenovo/tb-common
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := msm8953
+TARGET_BOOTLOADER_BOARD_NAME := msm8937
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8953
+TARGET_BOARD_PLATFORM := msm8937
 
 # Architecture
 TARGET_ARCH := arm64
