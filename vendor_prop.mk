@@ -62,9 +62,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.gps.agps_provider=1
 
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
+    debug.hwui.use_buffer_age=false \
     vendor.gralloc.enable_fb_ubwc=1 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
