@@ -46,7 +46,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.enable_fb_ubwc=1 \
     debug.sf.enable_hwc_vds=1 \
-    ro.opengles.version=196610 \
+    setprop vendor.opengles.version=196608 \
+    setprop persist.graphics.vulkan.disable=true \
     ro.vendor.display.cabl=0
 
 # DRM
