@@ -37,7 +37,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "TB8703 TB8704 TBX704 TB8504"
+write_headers "TB8703 TB8704 TBX704 TB8504 TBX304"
 
 # Main Qcom blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
