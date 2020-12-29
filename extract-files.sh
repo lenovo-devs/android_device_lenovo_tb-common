@@ -60,6 +60,12 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        lib64/libwfdnative.so)
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
+        product/etc/permissions/qti_libpermissions.xml)
+            sed -i 's|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g' "${2}"
+            ;;
         product/etc/permissions/qcrilhook.xml)
             sed -i 's|/system/framework/qcrilhook.jar|/system/product/framework/qcrilhook.jar|g' "${2}"
             ;;
