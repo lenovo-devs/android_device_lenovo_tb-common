@@ -9,9 +9,9 @@ do
 done
 
 # Move variant-specific blobs
-mv /system/vendor/firmware/variant/$baseband/a506_zap* /system/vendor/firmware/
-mv /system/vendor/firmware/variant/$baseband/goodixfp* /system/vendor/firmware/
-rm -rf /system/vendor/firmware/variant
+mv /vendor/firmware/variant/$baseband/a506_zap* /vendor/firmware/
+mv /vendor/firmware/variant/$baseband/goodixfp* /vendor/firmware/
+rm -rf /vendor/firmware/variant
 
 # Remove telephony files for wifi variant
 if [ "$baseband" == "apq" ]; then 

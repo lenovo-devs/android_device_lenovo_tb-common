@@ -24,15 +24,15 @@
 # components.
 
 def IncrementalOTA_InstallEnd(info):
-  info.script.Mount("/system")
+  info.script.Mount("/vendor")
   RunCustomScript(info, "deunify.sh", "")
-  info.script.Unmount("/system")
+  info.script.Unmount("/vendor")
   return
 
 def FullOTA_InstallEnd(info):
-  info.script.Mount("/system")
+  info.script.Mount("/vendor")
   RunCustomScript(info, "deunify.sh", "")
-  info.script.Unmount("/system")
+  info.script.Unmount("/vendor")
 
 def RunCustomScript(info, name, arg):
   info.script.AppendExtra(('run_program("/tmp/install/bin/%s", "%s");' % (name, arg)))
