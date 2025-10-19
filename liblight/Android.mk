@@ -19,7 +19,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := lights.c
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware
 LOCAL_CFLAGS := -DLOG_TAG=\"qdlights\"
 LOCAL_CLANG  := true
 LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
