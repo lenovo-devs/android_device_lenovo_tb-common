@@ -175,7 +175,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
